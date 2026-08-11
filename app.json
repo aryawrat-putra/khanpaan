@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "code-new",
-    "slug": "code-new",
+    "name": "khanpaan-app",
+    "slug": "khanpaan-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "codenew",
+    "scheme": "khanpaan",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
