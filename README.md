@@ -32,12 +32,16 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    pnpm create expo-app --template default@sdk-57
    ```
-1. Run
+2. Run
    ```bash
    pnpm expo start
    ```
-1. When you're ready, run:
+3. When you're ready, run:
    ```bash
    pnpm dlx run reset-project
    ```
    This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+### Credits
+
+- Icons used from [here](https://fontawesome.com/icons/).

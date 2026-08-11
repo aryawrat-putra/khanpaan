@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function DashboardScreen() {
+export default function RecipeScreen() {
   return (
     <View style={styles.container}>
-      <Text>Dashboard Page</Text>
+      <Text>Recipe Page</Text>
     </View>
   );
 }

@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function DashboardScreen() {
+export default function HistoryLogsScreen() {
   return (
     <View style={styles.container}>
-      <Text>Dashboard Page</Text>
+      <Text>History Logs Page</Text>
     </View>
   );
 }
