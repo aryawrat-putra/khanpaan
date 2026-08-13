@@ -1,17 +1,18 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text } from "@/components/ui/text";
+import { useTheme } from "@/store/theme";
+import { commonStyles } from "@/styles/common";
+import { ScrollView } from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function TodayScreen() {
+  const { colors } = useTheme();
+  const commonStyle = commonStyles(colors);
+
   return (
-    <View style={styles.container}>
-      <Text>Today Page</Text>
-    </View>
+    <SafeAreaView style={commonStyle.screen}>
+      <ScrollView contentContainerStyle={{ padding: 4 , flexGrow: 1 }}>
+        <Text>Today Page</Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

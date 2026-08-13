@@ -33,14 +33,101 @@ export const Colors = {
         sidebarBorder: "#e2e8f0",
         sidebarRing: "#fb2c36",
         shadowColor: "oklch(0 0 0)",
-        shadow2xs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
-        shadowXs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
-        shadowSm: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
-        shadow: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
-        shadowMd: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
-        shadowLg: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
-        shadowXl: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
-        shadow2xl: "0 1px 4px 0px hsl(0 0% 0% / 0.25)",
+        // collective shadows
+        // shadow2xs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
+        // shadowXs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
+        // shadowSm: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+        // shadow: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+        // shadowMd: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
+        // shadowLg: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
+        // shadowXl: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
+        // shadow2xl: "0 1px 4px 0px hsl(0 0% 0% / 0.25)",
+        shadow2xs: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.05)",
+        }],
+
+        shadowXs: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.05)",
+        }],
+        shadow: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 2,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+        shadowMd: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 2,
+                blurRadius: 4,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+        shadowLg: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 4,
+                blurRadius: 6,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+        shadowXl: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 8,
+                blurRadius: 10,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+        shadow2xl: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.25)",
+        }],
     },
     dark: {
         background: "#0a0a0a",
@@ -76,14 +163,123 @@ export const Colors = {
         sidebarBorder: "#404040",
         sidebarRing: "#ff6467",
         shadowColor: "oklch(0 0 0)",
-        shadow2xs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
-        shadowXs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
-        shadowSm: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
-        shadow: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
-        shadowMd: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
-        shadowLg: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
-        shadowXl: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
-        shadow2xl: "0 1px 4px 0px hsl(0 0% 0% / 0.25)",
+        // online shadows
+        // shadow2xs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
+        // shadowXs: "0 1px 4px 0px hsl(0 0% 0% / 0.05)",
+        // shadowSm: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+        // shadow: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10)",
+        // shadowMd: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10)",
+        // shadowLg: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10)",
+        // shadowXl: "0 1px 4px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10)",
+        // shadow2xl: "0 1px 4px 0px hsl(0 0% 0% / 0.25)",
+        shadow2xs: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.05)",
+        }],
+
+        shadowXs: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.05)",
+        }],
+
+        shadowSm: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 2,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+
+        shadow: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 2,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+
+        shadowMd: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 2,
+                blurRadius: 4,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+
+        shadowLg: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 4,
+                blurRadius: 6,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+
+        shadowXl: [
+            {
+                offsetX: 0,
+                offsetY: 1,
+                blurRadius: 4,
+                spreadDistance: 0,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+            {
+                offsetX: 0,
+                offsetY: 8,
+                blurRadius: 10,
+                spreadDistance: -1,
+                color: "hsl(0 0% 0% / 0.10)",
+            },
+        ],
+
+        shadow2xl: [{
+            offsetX: 0,
+            offsetY: 1,
+            blurRadius: 4,
+            spreadDistance: 0,
+            color: "hsl(0 0% 0% / 0.25)",
+        }],
     },
 } as const;
 // from : https://tweakcn.com/themes/cmm2769u2000004jobride6q4
