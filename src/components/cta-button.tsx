@@ -12,6 +12,7 @@ export default function CtaButton() {
         <Button
             onPress={() => console.log("pressed")}
             style={commonStyle.ctaButton}
+            variant="default"
         >
             {/* <Image
           source={require("@/assets/images/icons/heart-circle-plus-solid.png")}
