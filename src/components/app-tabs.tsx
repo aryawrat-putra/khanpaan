@@ -16,6 +16,8 @@ export default function AppTabs() {
                 default: { color: colors.secondaryForeground },
                 selected: { color: colors.foreground },
             }}
+            rippleColor={colors.primary}
+            // disableIndicator
         >
             <NativeTabs.Trigger name="index">
                 <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
